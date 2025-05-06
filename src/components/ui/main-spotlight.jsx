@@ -70,20 +70,20 @@ export function SpotLightItem({ children, className }) {
         " relative flex  justify-center items-center p-[1.5px] lg:rounded-lg rounded-xs overflow-hidden"
       )}
     >
-      {/* {isHovered && (
+      {isHovered && (
         <div
           className="pointer-events-none absolute opacity-0 z-50 rounded-xl w-full h-full group-hover:opacity-100  transition duration-300 "
           style={{
             background: `
             radial-gradient(
               250px circle at ${overlayColor.x}px ${overlayColor.y}px,
-              rgba(255, 255, 255, 0.137),
+              rgba(255, 0, 0, 0.137),
               transparent 80%
             )
           `,
           }}
         />
-      )} */}
+      )}
       {HoverFocusSpotlight && (
         <div
           className="absolute opacity-0 group-hover:opacity-100 z-10 inset-0 bg-fixed rounded-lg"
