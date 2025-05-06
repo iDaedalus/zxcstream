@@ -35,7 +35,7 @@ function Loader() {
   );
 }
 export default function Dash() {
-  const apiKey = "47a1a7df542d3d483227f758a7317dff";
+  const apiKey = import.meta.env.VITE_API_KEY;
   const [open, setOpen] = useState(false);
   const [value, setValue] = useState("movie");
   const [search, setSearch] = useState("");
