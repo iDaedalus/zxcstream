@@ -21,8 +21,10 @@ export default function Header() {
         initial={{ x: 100, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 1, ease: "easeInOut" }}
-        className="text-gray-300 flex items-center gap-15"
-      ></motion.div>
+        className="text-gray-300 "
+      >
+        <DefaultDemo />
+      </motion.div>
     </header>
   );
 }

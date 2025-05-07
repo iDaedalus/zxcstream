@@ -1,5 +1,13 @@
 import { motion, AnimatePresence } from "framer-motion";
-import { Search, ChevronsUpDown, Check, Film, Tv } from "lucide-react";
+import {
+  Search,
+  ChevronsUpDown,
+  Check,
+  Film,
+  Tv,
+  ArrowRight,
+  ChevronRight,
+} from "lucide-react";
 import { SpotLightItem, Spotlight } from "@/components/ui/main-spotlight";
 import SpotlightBorderWrapper from "./border";
 import {
@@ -140,7 +148,7 @@ export default function Dash() {
             initial={{ y: 100, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ ease: "easeInOut", delay: 0.8, duration: 1 }}
-            className="relative z-50 text-center px-4 flex flex-col justify-end h-[50vh] w-full lg:w-1/2 space-y-10"
+            className="relative z-50 text-center px-4 flex flex-col justify-end h-[350px] w-full lg:w-1/2 space-y-10"
           >
             <div className="text-gray-300 mt-4 font-bold text-sm lg:text-5xl zcc">
               <span>
@@ -251,7 +259,13 @@ export default function Dash() {
               </div>
             </div>
           </motion.div>
-
+          {/* {search.trim() === "" && (
+            <div className="text-center">
+              <Button className="hover:shadow-[0_0px_50px_0_rgba(255,0,0,0.5)] bg">
+                Browse <ChevronRight />
+              </Button>
+            </div>
+          )} */}
           <div className="w-full lg:w-3/4 mt-15 px-4 lg:px-0">
             <AnimatePresence mode="wait">
               {search.trim() !== "" && (
