@@ -142,9 +142,12 @@ export default function Dash() {
             transition={{ ease: "easeInOut", delay: 0.8, duration: 1 }}
             className="relative z-50 text-center px-4 flex flex-col justify-end h-[50vh] w-full lg:w-1/2 space-y-10"
           >
-            <div className="text-gray-300 mt-4 font-bold text-3xl lg:text-5xl zcc">
-              <span> Dive into endless hours of free streaming with</span>
-              <span className="zxc ml-2 tracking-[-5px] lg:tracking-[-8px]">
+            <div className="text-gray-300 mt-4 font-bold text-sm lg:text-5xl zcc">
+              <span>
+                {" "}
+                Dive into endless hours of free streaming <span className="hidden lg:inline">with</span>
+              </span>
+              <span className="lg:text-5xl text-4xl zxc ml-2 tracking-[-5px] lg:tracking-[-8px]">
                 ZXC
                 <motion.span
                   className="bg-[linear-gradient(110deg,#404040,35%,#fff,50%,#404040,75%,#404040)] bg-[length:200%_100%] bg-clip-text font-bold text-red-800/70 pr-2 drop-shadow-md text-shadow"
@@ -174,7 +177,7 @@ export default function Dash() {
                     setPage(1);
                   }}
                   className=" text-gray-300 text-xs lg:text-[0.9rem] lg:pr-30 "
-                  placeholder={`What would you like to watch ${timeWord} ...`}
+                  placeholder={`What are you watching ${timeWord} ..`}
                   type="search"
                 />
               </SpotlightBorderWrapper>
