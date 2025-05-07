@@ -140,12 +140,13 @@ export default function Dash() {
             initial={{ y: 100, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ ease: "easeInOut", delay: 0.8, duration: 1 }}
-            className="relative z-50 text-center px-4 flex flex-col justify-end h-[50vh] w-full lg:w-1/2 space-y-10"
+            className="relative z-50 text-center px-4 flex flex-col justify-end h-[40vh] lg:h-[50vh] w-full lg:w-1/2 space-y-10"
           >
             <div className="text-gray-300 mt-4 font-bold text-sm lg:text-5xl zcc">
               <span>
                 {" "}
-                Dive into endless hours of free streaming <span className="hidden lg:inline">with</span>
+                Dive into endless hours of free streaming{" "}
+                <span className="hidden lg:inline">with</span>
               </span>
               <span className="lg:text-5xl text-4xl zxc ml-2 tracking-[-5px] lg:tracking-[-8px]">
                 ZXC
